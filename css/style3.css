@@ -1,0 +1,733 @@
+html{
+    width: 100%;
+    height:auto;
+    background-color: #260C1A;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+ @font-face {
+    font-family: 'Special Elite';
+    src: url('../fonts/Special Elite.woff') format("woff"),
+        url('../fonts/Special Elite.ttf') format("truetype"),
+        url('../fonts/Special Elite.eot') format("embedded-opentype"),
+        url("../fonts/Special Elite.woff2") format("woff2"), /* chrome、firefox */
+        url("../fonts/Special Elite.svg#Special Elite") format("svg"); /* iOS 4.1- */
+  }
+  @font-face {font-family: "Special Elite"; 
+    src: url("//db.onlinewebfonts.com/t/e91f4ee1fa3e86ac219fbfa0d175e774.eot"); 
+    src: url("//db.onlinewebfonts.com/t/e91f4ee1fa3e86ac219fbfa0d175e774.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/e91f4ee1fa3e86ac219fbfa0d175e774.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/e91f4ee1fa3e86ac219fbfa0d175e774.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/e91f4ee1fa3e86ac219fbfa0d175e774.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/e91f4ee1fa3e86ac219fbfa0d175e774.svg#Special Elite") format("svg"); }
+ @font-face {
+    font-family: "Manorly";
+    src: url("../fonts/Manorly Regular.eot") format("embedded-opentype"), /* IE9*/
+    url("../fonts/Manorly Regular.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Manorly Regular.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Manorly Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/Manorly Regular.svg#Manorly Regular") format("svg"); /* iOS 4.1- */
+  }
+  @font-face {font-family: "Manorly"; 
+    src: url("//db.onlinewebfonts.com/t/d234b4d86d5a2988cde7160b34aa591f.eot"); 
+    src: url("//db.onlinewebfonts.com/t/d234b4d86d5a2988cde7160b34aa591f.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/d234b4d86d5a2988cde7160b34aa591f.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/d234b4d86d5a2988cde7160b34aa591f.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/d234b4d86d5a2988cde7160b34aa591f.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/d234b4d86d5a2988cde7160b34aa591f.svg#Manorly") format("svg"); 
+}
+
+/* top */
+.top{
+    display: flex;
+    height: 11vw;
+    width: 100%;
+    background-color:#D88373;
+}
+.title{
+    height: 11vw;
+    width: 100%;
+    margin:0 !important;
+}
+.coupable{
+    font-family: Manorly;
+    font-size: 5.5vw;
+    text-align: center;
+    color: #F5E2C8;
+    text-shadow: 0.2vw 0.57vw 0.3125vw #7F2131;
+    margin:0;
+    z-index: 1;
+}
+.je{
+    font-family: Manorly;
+    font-size: 2.97vw;
+    text-align: center;
+    color: #661A28;
+    margin:0;
+    margin-top: -2.1vw;
+}
+.fl1{
+    width: 17.3vw;
+    height: 12vw;
+    overflow-x:hidden;
+}
+.fl2{
+    width: 16vw;
+    height: 13vw;
+    overflow-x:hidden;
+}
+@media (max-width:767px) {
+    .top{
+        height: 20vw;
+    }
+    .title{
+        height: 20vw;
+    }
+    .coupable{
+        font-size: 9vw;
+        text-align: center;
+    }
+    .je{
+        font-size: 4vw;
+        text-align: center;
+    }
+    .fl1{
+        width: 24vw;
+        height: 19vw;
+    }
+    .fl2{
+        width: 24vw;
+        height: 19vw;
+    }
+} 
+ 
+/* nav */
+nav{
+    display: flex;
+}
+.ul{
+    color:#F5E2C8 !important;
+    width:100%;
+    height: 4.79vw;
+    background-color: #260C1A;
+    margin:0;
+}   
+.nav-item{
+    font-family: Special Elite;
+    font-size: 1.7vw;
+    line-height: 4.79vw;
+    font-weight: 900px;
+    color: #F5E2C8 !important;
+}  
+.nav-flex-icons .nav-item{
+    margin-left:3vw !important;
+    width: 3vw;
+    height: 3vw;
+    margin-bottom:1.5vw !important;
+}
+.nav-flex-icons{
+    display: inline; 
+}
+.dropdown-toggle{
+    background-color: #260C1A !important;  
+    color: #F5E2C8 !important;
+}
+.dropdown-item{
+    font-size: 1.5vw;
+}
+.nav-link{
+    margin-right:3vw !important;
+    margin-left:3vw !important;
+}
+.dropdown-menu {
+    display: none;
+    line-height: 4vw;
+    font-size: 1.09vw; 
+    background-color: hsl(10, 56%, 65%) !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    margin-left:3vw !important;
+}  
+ 
+.user{
+    width: 2vw;
+    height: 2vw;
+}
+.cart{
+    width: 2.3vw;
+    height: 2vw;
+}
+.icon1{
+    color:rgba(0,0,0,0);   
+}
+.icon1:hover {
+    cursor: pointer;
+    animation: icon1 0.5s;
+}
+ 
+@keyframes icon1 {
+    0%,
+    100% {
+    transform: scale(1, 1);
+    }
+    25% {
+    transform: scale(0.9, 1.1);
+    }
+    50% {
+    transform: scale(1.1, 0.9);
+    }
+    75% {
+    transform: scale(0.95, 1.05);
+    }
+}  
+.icon2{
+    color:rgba(0,0,0,0);
+}
+.icon2:hover {
+    cursor: pointer;
+    animation: icon2 0.5s;
+}
+    
+@keyframes icon2 {
+    0%,
+    100% {
+    transform: scale(1, 1);
+    }
+    25% {
+    transform: scale(0.9, 1.1);
+    }
+    50% {
+    transform: scale(1.1, 0.9);
+    }
+    75% {
+    transform: scale(0.95, 1.05);
+    }
+} 
+@media (max-width:978px) {
+    .dropdown-item{
+        font-size: 1.9vw;
+    }
+    .nav-item{
+        font-size: 2.2vw;
+        line-height: 3.5vw;
+        font-weight: 300;
+    } 
+}
+@media (max-width:580px) {
+    .dropdown-menu {
+        line-height: 7vw;
+        margin-left:3vw !important;
+    }
+    .nav-item{
+        font-size: 5vw;
+        line-height: 5.5vw;
+    }  
+    .dropdown-item{
+        font-size: 4.5vw;
+    }
+    .user{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .cart{
+        width:4vw;
+        height: 3.5vw;
+    }
+    .nav-flex-icons .nav-item{
+        width: 5.6vw;
+        height: 5.6vw;
+    }
+}
+ 
+.AD{
+    position: relative;
+}
+/*step1*/
+.step{
+    background-color: #260C1A;
+    width:100%;
+}
+.box1{
+    position: relative;
+    width: 90%;
+    background-color: #260C1A;
+    padding-top:7vw;
+}
+/* .step1{
+    width:40%; 
+    height:100%;
+} */
+.step .row{
+    width: 90%;
+}
+.step1 .line{
+  background-color:#AB655C;
+  width: 33.70vw;
+  height:3px;
+  z-index:2;
+}
+.step1 .bigw{
+    color:#FFF1E7;
+    font-size: 2.6vw;
+    font-family:Special Elite;
+    padding-left:1vw;
+}
+.step1 .nolw{
+    color:#FFF1E7;
+    font-size: 1.82vw;
+    font-family:Special Elite;
+    padding-left:1vw;
+}
+.step1 .frame{
+    width: 50vw;
+    height:8.13vw;
+    border-style:solid;
+    border-color:#FFF1E7;
+}
+/*特效*/.mh5{
+    transition: all 0.5s;
+    position: relative; 
+    }
+ 
+    .mh5 span{
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    }
+    .mh5::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: hsl(10, 56%, 65%,0.7);
+    border-radius:2.6vw;
+    transition: all 0.4s;
+    transform: scale(0.5, 1);
+    }
+    .mh5:hover::before{
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    }
+
+.touch{
+    border-radius:2.6vw;
+    margin-top:6vw;
+}
+.touch .word{
+    width: 11.23vw;
+    height:3.59vw;
+    
+    padding-left: 1vw;
+    background-color:#FFF1E7;
+    border-radius:2.6vw;
+    color:#58252E;
+    font-size: 2.08vw;
+    font-family:Special Elite;
+}
+.row1{
+    width:100%;
+    padding-bottom:2vw;
+    justify-content: center;
+}
+.red{
+    width:13.44vw;
+    height:11.32vw;
+}
+/*step2*/
+.box2{
+    position: relative;
+    width: 90%;
+    background-color: #260C1A;
+    padding-top:7vw;
+}
+/*step3*/
+.box4{
+    width: 90%;
+    background-color: #260C1A;
+    padding-top:7vw;
+    padding-bottom:7vw;
+}
+.hidden_w{
+    display: none;
+}
+@media (max-width:990px) {
+    .box1 .row{
+        flex-direction: column-reverse;
+    }  
+    .box4 .row{
+        flex-direction: column-reverse;
+    }
+    .row1{
+        width: 50vw !important;
+        margin: 0 !important;
+        padding:0 !important
+    }
+    .classroom{
+        margin-top: 2vw;
+        width: 100vw !important;
+    }
+    .step1{
+        height: 17vw;
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .box2 .touch{
+        display: flex;
+        justify-content: end !important;
+    }
+    .row1 .word{
+        display:none;
+    }
+    .touch{
+        margin: 0 !important;
+        padding:0 !important
+    }
+    .touch img{
+        height: 13.53vw !important;  
+    }
+    .step1 .bigw{
+        font-size: 3vw;
+        font-family:Special Elite;
+        padding-left:1vw;
+    }
+    .step1 .nolw{
+        color:#FFF1E7;
+        font-size: 2.3vw;
+        font-family:Special Elite;
+        padding-left:1vw;
+    }
+    .step1 .frame{
+        height:13.85vw;
+        border-style:solid;
+        border-color:#FFF1E7;
+    }
+    .hidden_w{
+        display: block;
+        margin-top: 1vw;
+        width: 100%;
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .row .word_ms{
+        margin-top: 2vw;
+        width: 100%;
+        
+        text-align: center;
+        padding: 1vw;
+        background-color:#FFF1E7;
+        border-radius:2.6vw;
+        color:#58252E;
+        font-size: 3.5vw;
+        font-family:Special Elite;
+    }
+}
+@media (max-width:767px) {
+    .row1{
+        width: 50vw !important;
+        margin: 0 !important;
+        padding:0 !important
+    }
+    .classroom{
+        margin:0 !important;
+        padding: 0 !important;
+        margin-top: 5vw !important;
+    }
+    .step1{
+        height: 24vw;
+        margin: 0 !important;
+        padding:0 !important
+    }
+    .box2 .touch{
+        display: flex;
+        justify-content: end !important;
+    }
+    .row1 .word{
+        display:none;
+    }
+    .touch{
+        margin: 0 !important;
+        padding:0 !important;
+    }
+    .touch img{
+        height: 19.53vw !important;  
+    }
+    .step1 .bigw{
+        font-size:4.5vw;
+        font-family:Special Elite;
+        padding-left:1vw;
+    }
+    .step1 .nolw{
+        color:#FFF1E7;
+        font-size: 3.5vw;
+        font-family:Special Elite;
+        padding-left:1vw;
+    }
+    .step1 .frame{
+        height:25.85vw;
+    }
+    .row .word_ms{
+        font-size: 5vw;
+    }
+}
+
+/* footer */
+.footer{
+    position: relative;
+    width: 100%;
+    height:15.625vw;  
+    background-color:#D88373;
+}
+.footer .row{
+    width: 100%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top:50%;
+    left:50%;
+    align-items: center;
+    justify-content: center;
+
+}
+.buttom{
+    color:#F5E2C8;
+    font-family: Special Elite;
+    text-align: center;
+}
+
+.bigw{
+    position: relative;
+    font-size:1.67vw;
+    
+}
+.nolw{
+    position: relative;
+    font-size:0.94vw;
+    line-height: 2vw;
+}
+.ic{
+    padding-right: 1vw;
+    width:auto;
+    height:1.25vw ;
+}
+.ic2{
+    padding-right: 0.5vw;
+    width:auto;
+    height:1.25vw ;
+}
+
+input{
+    border:0;
+    display:inline-block;
+    position:absolute;
+    background-color:#B08B88;
+    font-size: 0.94vw;
+    font-family: Special Elite;
+    color:#F5E2C8;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+input:hover{
+    color:#B08B88;
+    background-color:#F5E2C8;
+}
+.word{
+    font-size: 0.89vw;
+    line-height:4vw;
+}
+.span{
+   padding:1vw 1vw 1vw 1vw;
+}
+/*特效*/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  max-width: 900px;
+  font-family: Raleway, Arial, sans-serif; 
+  border-color: #F5E2C8;	
+  display: inline;
+  font-family : Special Elite;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #eee;
+    margin: 2em 0;
+    padding: 0;
+}
+
+
+
+/* Buttons styles */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type="submit"].btn,
+button.btn {
+	cursor: pointer;
+}
+
+a.btn,.btn {
+   margin-right: 1em; /* remove this while use*/
+	display: inline-block;
+	outline: none;
+	*zoom: 1;
+	text-align: center;
+	text-decoration: none;
+  font-family: Special Elite;
+	font-weight: 300;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	border: 1px solid;
+	transition: all 0.2s ease;
+	box-sizing: border-box;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+  
+}
+/* Radius */
+.btn-radius {
+  border-radius: 3vw;
+}
+/* Sizes */
+
+.btn-medium {
+font-size: 0.78vw;
+  padding: 0.447vw 1.145vw;
+}
+
+/* Colors */
+.btn-green {
+  color:#F5E2C8;
+  border-color: hsl(350, 60%, 19%,73%);
+ 	
+  
+}
+.btn-green:hover {
+  background: hsl(350, 60%, 19%,73%);
+  border-color:  hsl(350, 60%, 19%,100%);	
+  display: inline;
+  font-family : Special Elite;
+  color: hsl(350, 60%, 19%,73%);
+  border-radius: 1.5vw;
+}
+.btn-blue {
+  color:#F5E2C8;
+  border-color: hsl(350, 60%, 19%,73%);
+}
+.btn-blue:hover {
+    background: hsl(350, 60%, 19%,73%);
+    border-color:  hsl(350, 60%, 19%,100%);	
+    display: inline;
+    font-family : Special Elite;
+    color: hsl(350, 60%, 19%,73%);
+    border-radius: 1.5vw;		
+}
+.wrap{
+    width: 100%;
+}
+@media (max-width:990px) {
+    .foic{
+        height: 9vw;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (max-width:767px) {
+    .footer{
+        height:70vw;  
+    }
+    .footer .row{
+        width: 70%;
+    }
+    .bigw{
+        font-size:3vw;
+    }
+    .nolw{
+        font-size:2.1vw;
+        line-height: 4vw;
+    }
+    .ic{
+        padding-right: 1vw;
+        width:auto;
+        height:1.5vw ;
+    }
+    .ic2{
+        padding-right: 0.5vw;
+        width:auto;
+        height:1.5vw ;
+    }
+    .box3{
+        font-size:1.9vw;
+        margin-bottom: 1vw;
+    }
+}
+
+@media (max-width:580px) {
+    .footer{
+        height:96vw;  
+    }
+    .bigw{
+        font-size:3.5vw;
+    }
+    .nolw{
+        font-size:1.5vw;
+        line-height: 4.5vw;
+    }
+    .ic{
+        padding-right: 1.5vw;
+        width:auto;
+        height:2.5vw ;
+    }
+    .ic2{
+        padding-right: 1vw;
+        width:auto;
+        height:2.5vw ;
+    }
+    .box3{
+        margin-bottom: 2vw;
+    }
+    a.btn,.btn {
+        font-size: 1vw;
+        letter-spacing: 0.1vw;
+        margin-bottom: 2vw;
+        vertical-align: middle;
+        border: 0.3vw solid;
+        transition: all 0.2s ease;
+        box-sizing: border-box;
+        text-shadow: 0 0.3vw 0 rgba(0,0,0,0.01);
+     }
+
+} 
